@@ -12,7 +12,10 @@ const Seo = () => {
       {/* <Logo /> */}
       <section className={` bg-gray-50 relative pb-14 ${styles.paddingX} ${styles.flexStart} personaSection`}>
 
-      <OpenAiTextCompletion />
+
+
+
+      {/* <OpenAiTextCompletion /> */}
 
       </section>
 

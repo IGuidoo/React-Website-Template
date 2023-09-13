@@ -5,6 +5,7 @@ import {
   CatagoriesServices,
   Footer,
   Carousel,
+  TestemonialsGrid
 } from "../../components";
 
 import Hero from "./Hero";
@@ -35,14 +36,21 @@ const Home = () => {
       </div>
 
       <AllInOne data={AllInOneData} />
-      <Visie data={VisieData} />
+      {/* <Visie data={VisieData} /> */}
       <div className="md:relative overflow-x-clip">
         <OverOns data={OverOnsData} />
       </div>
       <div>
         <CatagoriesServices data={CatagoriesServecesData} />
-
       </div>
+    <div className="hidden lg:block">
+      <TestemonialsGrid />
+    </div>
+
+
+
+
+
       {/* <LatestDevelopments data={LatestDevelopmentsData} /> */}
 
 

@@ -34,7 +34,7 @@ const CatagoriesServices = ({ data = [] }) => {
   });
 
   return (
-    <section className=" my-15 ">
+    <section className=" my-15 md:py-40">
       <div
         className={`relative  bg-secondary-50 md:bg-white shadow-lg  rounded-4xl p-4 lg:p-12 2xl:p-24 ${styles.boxWidth} ${styles.mdHorizontalCenter} ${styles.borderInsetWhite2} `}
       >

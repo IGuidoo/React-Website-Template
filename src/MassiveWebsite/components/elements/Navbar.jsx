@@ -36,45 +36,45 @@ const Navbar = () => {
                 >
                   {nav.title === "Diensten" ? (
                     <div
-                      // Attach the events to this parent div
-                      onMouseEnter={() => handleMouseEnter()}
-                      onMouseLeave={() => setDienstenDropdown(false)}
-                      className="relative cursor"
+                    onMouseEnter={() => handleMouseEnter()}
+                    onMouseLeave={() => setDienstenDropdown(false)}
+                    className="relative cursor"
+                >
+                    {nav.title}
+                    <div
+                        className={`
+                            absolute left-[-180%] p-6 w-[326px] bg-white rounded-lg shadow-md outline-1 outline-gray-300
+                            transition-opacity duration-300 
+                            ${dienstenDropdown ? "opacity-100 block" : "opacity-0 hidden"}
+                        `}
                     >
-                      {nav.title}
-                      <div
-                        className={`${dienstenDropdown ? "block" : "hidden"
-                          } absolute left-[-180%] p-6 w-[326px] bg-white rounded-lg shadow-md outline-1 outline-gray-300`}
-                      >
                         <ul>
-                          {navLinksDiensten.map((diensten, indexDiensten) => (
-                            <li
-                              className={`${indexDiensten === navLinksDiensten.length - 1
-                                  ? "mb-0"
-                                  : "mb-6"
-                                }`}
-                              key={diensten.id}
-                            >
-                              <NavLink
-                                to={`${diensten.slug}`}
-                                exact
-                                className="flex flex-row"
-                              >
-                                <img src={diensten.icon} alt={diensten.id} />
-                                <div className="pl-6">
-                                  <h4 className="text-gray-700 text-base font-medium leading-tight">
-                                    {diensten.title}
-                                  </h4>
-                                  <p className="text-gray-400 text-sm  ">
-                                    {diensten.subTitle}
-                                  </p>
-                                </div>
-                              </NavLink>
-                            </li>
-                          ))}
+                            {navLinksDiensten.map((diensten, indexDiensten) => (
+                                <li
+                                    className={`${indexDiensten === navLinksDiensten.length - 1 ? "mb-0" : "mb-6"}`}
+                                    key={diensten.id}
+                                >
+                                    <NavLink
+                                        to={`${diensten.slug}`}
+                                        exact
+                                        className="flex flex-row"
+                                    >
+                                        <img src={diensten.icon} alt={diensten.id} />
+                                        <div className="pl-6">
+                                            <h4 className="text-gray-700 text-base font-medium leading-tight">
+                                                {diensten.title}
+                                            </h4>
+                                            <p className="text-gray-400 text-sm">
+                                                {diensten.subTitle}
+                                            </p>
+                                        </div>
+                                    </NavLink>
+                                </li>
+                            ))}
                         </ul>
-                      </div>
                     </div>
+                </div>
+                
                   ) : (
                     <NavLink to={`${nav.link}`} exact>
                       {nav.title}

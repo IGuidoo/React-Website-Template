@@ -8,6 +8,7 @@ import Footer from "./elements/Footer.jsx"
 import OpenAiTextCompletion from "./OpenAiTextCompletion.jsx"
 import Card from "./elements/Card.jsx"
 import Carousel from "./sections/Carousel.jsx"
+import TestemonialsGrid from "./sections/TestemonialsGrid.jsx"
 
 export {
     AnnimationRef,
@@ -18,5 +19,6 @@ export {
     Footer,
     OpenAiTextCompletion,
     Card,
-    Carousel
+    Carousel,
+    TestemonialsGrid
 }

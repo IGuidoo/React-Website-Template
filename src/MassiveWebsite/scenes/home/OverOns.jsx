@@ -2,13 +2,14 @@ import React from 'react'
 import styles from '../../styles/styles'
 import { NavLink } from 'react-router-dom'
 
-import { logoSmall, purpleCheckmark } from '../../assets/img'
+import { logoSmall, purpleCheckmark, homeMobileBackgroundPNG } from '../../assets/img'
 
 const OverOns = ({ data = [] }) => {
     return (
-        <section className={`${styles.gutter} ${styles.mdHorizontalCenter} py-15 md:w-full `}>
-            {/* <img src={data.img} alt={data.alt} className='radial-img-gradient md:order-2 md:absolute top-1/2 right-0 transform translate-y-[-50%] md:w-[40%] rotate-[330deg] md:max-w-none' /> */}
-            <div className={` flex flex-col gap-8 md:w-[725px]`}>
+        
+        <section className={`${styles.gutter} ${styles.mdHorizontalCenter} py-15 grid grid-flow-row gap-16 xl:py-40 md:w-full  lg:grid-flow-col md:auto-cols-fr overflow-hidden `}>
+            <img src={homeMobileBackgroundPNG} alt={data.alt} className=' w-[100%] scale-[2] lg:order-2 md:scale-[2] xl:transform xl:translate-x-[27%] xl:translate-y-[-45%] xl:absolute xl:right-0 xl:scale-[1.2]' /> {/* radial-img-gradient top-1/2 right-0  md:w-[40%] rotate-[330deg] md:max-w-none transform translate-y-[-50%] */}
+            <div className={`pt-[19%] flex flex-col gap-8 lg:max-w-[725px] lg:pt-[0%]`}>
                 <div className='flex flex-col gap-4'>
                     <div className="flex text-xs leading-4">
                         <img src={logoSmall} alt="logo" />
