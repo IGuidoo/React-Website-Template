@@ -31,8 +31,11 @@ import logoLightGray from "./logoLightGray.svg"
 import homeTelefoon from "./homeTelefoon.png"
 import purpleCheckmark from "./purpleCheckmark.svg"
 import contactIcon from "./contactIcon.svg"
+<<<<<<< HEAD
 import homeMobileBackground from "./homeMobileBackground.svg"
 import homeMobileBackgroundPNG from "./homeMobileBackgroundPNG.png"
+=======
+>>>>>>> d1b7ff1f3bcb65bcb46d432acf690ffc9f475fba
 
 export {
     close,

@@ -5,7 +5,10 @@ import {
   CatagoriesServices,
   Footer,
   Carousel,
+<<<<<<< HEAD
   TestemonialsGrid
+=======
+>>>>>>> d1b7ff1f3bcb65bcb46d432acf690ffc9f475fba
 } from "../../components";
 
 import Hero from "./Hero";
